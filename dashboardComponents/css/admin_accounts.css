@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portal {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #634d4d;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #634d4d;
+    color: white;
+    text-decoration: none;
+}
+
+.btn.active {
+    background-color: #866d6d;
+}
+
+.accounts {
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-size: 3rem;
+    color: #634d4d;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+/* Adjustments for edit and delete buttons */
+td .edit-btn,
+td .delete-btn {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px; /* Add space between buttons */
+}

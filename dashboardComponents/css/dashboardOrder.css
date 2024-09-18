@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: #c41313; */
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+h1{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 3rem;
+    background: #929292;
+    color: #fff;
+    text-transform: capitalize;
+}
+table{
+    table-layout: auto;
+    width: 100%;
+}
+table thead{
+    background: #929292;
+}
+table thead th{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    padding: .3rem;
+}
+table tr:nth-child(even){
+    background: #2d2f18;
+}
+table tr:nth-child(even) td{
+    color: #fff;
+}
+
+
+table tr td{
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+    color: #929292;
+}
+table tr td:first-child{
+    font-weight: bold;
+}
+
+table tr td form button{
+    width: 95%;
+    height: 3rem;
+    cursor: pointer;
+}
+table tr td form #deliverNow{
+    margin-bottom: .5rem;
+    background: green;
+    color: #fff;
+    border: 0;
+    border-radius: .5rem;
+}
+table tr td form #delivered{
+    background: rgb(0, 252, 0);
+    color: #000;
+    border: 0;
+    border-radius: .5rem;
+}
+
+
+
+
+/* for sign out */
+#signoutCon{
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+}
+
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(255, 65, 65);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }

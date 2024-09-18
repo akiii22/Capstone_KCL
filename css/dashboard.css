@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Vidaloka', serif; */
+}
+body {
+  background: whitesmoke;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  /* color: #3d3d3d; */
+  color: #fff;
+  font-size: 24px;
+  margin-right: 30px;
+  font-family: "Vidaloka", serif;
+}
+h2 {
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+h3 {
+  /* color: #999; */
+  color: #fff;
+}
+
+ion-icon {
+  font-size: 2rem;
+  color: gray;
+  transition: 0.7s ease-out;
+}
+
+.title {
+  color: #3d3d3d;
+  font-family: "Roboto", sans-serif;
+}
+.btn {
+  background: #00e77f;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 20px;
+}
+
+.btn.hover {
+  color: #00e77f;
+  background: white;
+  padding: 3px 8px;
+  border: 15px solid white;
+}
+
+.side-menu {
+  background: #00e77f;
+  width: 18rem;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.side-menu #bars {
+  position: fixed;
+  top: 1rem;
+  left: 17rem;
+  color: gray;
+  font-size: 2.5rem;
+  z-index: 1000000;
+  display: none;
+}
+
+.side-menu .brand-name {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  background: #3d3d3d;
+  margin-bottom: 1rem;
+}
+.side-menu .brand-name > h1 {
+  text-align: center;
+}
+
+.side-menu li {
+  font-size: 23px;
+  padding: 10px 40px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.side-menu li:hover {
+  background: white;
+  color: rgb(111, 216, 111);
+}
+
+.container {
+  width: 80vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 18rem;
+  overflow: auto;
+}
+
+.container .header {
+  width: 100vw;
+  height: 4rem;
+  background: #3d3d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .header .nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.container .header .nav .user > a {
+  background: #00e77f;
+  color: #000;
+  transition: 0.3s ease-out;
+}
+.container .header .nav .user > a:hover {
+  background: #fff;
+}
+
+/*
+.container .header .nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header .nav .search input[type=text]{
+    border: none;
+    background: white;
+    padding: 12px;
+    width: 100%;
+}
+
+.container .header .nav .search button{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.container .header .nav .search button img {
+    width: 50px;
+    height: 50px;
+}*/
+
+/* unused */
+/* .container .header .nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header .nav .user img{
+    width: 30px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+   
+}
+
+.container .header .nav .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.container .header .nav .user .img-case img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%s;
+} */
+
+.container .content {
+  margin-top: 10vh;
+  height: 100vh;
+  max-width: 1200px;
+}
+
+.container .content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media screen and (max-width: 1270px) {
+  .container .content {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container .content {
+    max-width: 500px;
+  }
+}
+
+.container .content .cards .card {
+  width: 250px;
+  height: 150px;
+  background: #00e77f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .content .cards .card:hover ion-icon {
+  transform: rotate(1turn);
+}
+
+.order {
+  padding: 20px 30px;
+}
+
+/* unused */
+/* .container .content .content-2 {
+    min-height: 60vh;
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+} */
+
+/* media for nav */
+@media screen and (max-width: 800px) {
+  .side-menu #bars {
+    display: block;
+    left: 0.8rem;
+  }
+  /* nav new style */
+  .side-menu {
+    left: -50rem;
+    width: 100vw;
+    z-index: 1000000000;
+    padding-top: 4rem;
+    transition: 1s;
+    overflow: auto;
+  }
+
+  /* header new style */
+  .container {
+    left: 4rem;
+  }
+  .container .header {
+    width: auto;
+    flex-wrap: wrap;
+    height: 5rem;
+    gap: 1rem;
+    background: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container .header .user {
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container .content .cards {
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+  }
+}

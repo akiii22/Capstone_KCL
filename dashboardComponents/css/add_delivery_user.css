@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+form >input{
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-size: 1.3rem;
+    background-color: #fff;
+}
+form >button{
+    cursor: pointer;
+    padding: .3rem 1rem;
+}
+
+
+
+
+
+
+table{
+    table-layout: auto;
+    width: 100%;
+}
+table thead{
+    background: #929292;
+}
+table thead th{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    padding: .3rem;
+}
+table tr:nth-child(even){
+    background: #2d2f18;
+}
+table tr:nth-child(even) td{
+    color: #fff;
+}
+
+
+table tr td{
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+    color: #929292;
+}
+table tr td:first-child{
+    font-weight: bold;
+}

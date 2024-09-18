@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("../images/frontPagebg.png")no-repeat left bottom/cover;
+    height: 100vh;
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+ body::after{
+    content: "";
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top:0;left:0;
+    height: 100vh;
+    width: 100vw;
+ }
+
+ /* preloader */
+ .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1000000000;
+    position: absolute;
+    top: 50%;left: -50rem;transform: translate(-50%,-50%);
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .slider {
+    overflow: hidden;
+    background-color: white;
+    margin: 0 15px;
+    height: 80px;
+    width: 20px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff,
+      inset -5px -5px 10px rgba(0, 0, 255, 0.1),
+      inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  } 
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #00E77F,
+      inset 0px 0px 0px rgba(0, 0, 0, 0.1);
+    animation: animate_2 2.5s ease-in-out infinite;
+    animation-delay: calc(-0.5s * var(--i));
+  }
+  
+  @keyframes animate_2 {
+    0% {
+      transform: translateY(250px);
+      filter: hue-rotate(0deg);
+    }
+  
+    50% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(250px);
+      filter: hue-rotate(180deg);
+    }
+  }
+  /* preloader End */
+
+.mess{
+    z-index: 100000000;
+    background: #fff;
+    height: 8rem;
+    width: 20rem;
+    position: fixed;
+    top: 1rem;
+     right: -50rem;
+     border-radius: 1rem;
+     display: grid;
+     place-items: center;
+     transition: .6s ease;
+}
+.mess p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.forgot{
+    z-index: 100000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4rem;
+    box-shadow: -7px -1px 60px 2px rgba(0,0,0,0.42);
+-webkit-box-shadow: -7px -1px 60px 2px rgba(0,0,0,0.42);
+-moz-box-shadow: -7px -1px 60px 2px rgba(0,0,0,0.42);
+height: 400px;
+width: 97vw;
+max-width: 400px;
+border-radius: 1rem;
+}
+.forgot >h1{
+    color: #fff;
+}
+.forgot >label{
+    color: #000;
+    font-size: 1.5rem;
+}
+.forgot >input{
+    width: 95%;
+    height: 4rem;
+    border-radius: 1rem;
+    border: 0;
+    outline: none;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    background: #000;
+    color: #fff;
+    border-bottom: .5px solid #fff;
+}
+.forgot >select{
+    font-size: 1.5rem;
+    outline: none;
+    border: 0;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #000;
+    color: #fff;
+    padding: .4rem 1rem;
+}
+.forgot .cancel{
+  padding: .3rem 2rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  align-self: flex-end;
+  background: #000;
+  color: #fff;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+.forgot >button{
+   padding: .3rem 2rem;
+   cursor: pointer;
+   font-size: 1.4rem;
+   align-self: flex-end;
+   background: #000;
+   color: #fff;
+   border-radius: 1rem;
+   transition: .5s ease;
+   text-transform: uppercase;
+   margin-top: 1rem;
+}
+.forgot >button:hover,
+.forgot >a:hover{
+    background: #fff;
+    color: #000;
+}
